@@ -23,6 +23,7 @@ def predict_disease(data):
     return predicted_disease[0]
 
 # Streamlit UI setup
+st.set_page_config(page_title="Health Risk Predictor", page_icon="🏥", layout="wide")
 st.title('Health Risk Prediction')
 st.write("Enter the following details to predict health risks:")
 col1, col2 = st.columns(2)
